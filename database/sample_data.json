@@ -1,0 +1,441 @@
+{
+  "dataset_metadata": {
+    "label": "Demo Dataset - Synthetic data for demonstration purposes",
+    "version": "1.0.0",
+    "updated_at": "2026-09-18T00:00:00Z"
+  },
+  "packages": [
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "price_inr": 0,
+      "price_paise": 0,
+      "features": [
+        "Project Dashboard & Overview",
+        "Interactive Map Explorer",
+        "Basic Site Metrics",
+        "Community Support"
+      ],
+      "limits": {
+        "max_projects": 3,
+        "max_sites": 5,
+        "ai_insights": false,
+        "pdf_reports": false
+      }
+    },
+    {
+      "id": "professional",
+      "name": "Professional",
+      "price_inr": 499,
+      "price_paise": 49900,
+      "popular": true,
+      "features": [
+        "Everything in Explorer",
+        "AI Site Summaries (Gemini)",
+        "Environmental Anomaly Detection",
+        "Cross-Variable Recommendation Engine",
+        "12-Month Trend Analytics & Charts",
+        "PDF Report Generation & Download",
+        "Custom Environmental Alerts"
+      ],
+      "limits": {
+        "max_projects": 15,
+        "max_sites": 50,
+        "ai_insights": true,
+        "pdf_reports": true
+      }
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price_inr": 1499,
+      "price_paise": 149900,
+      "features": [
+        "Everything in Professional",
+        "Unlimited Projects & Sites",
+        "AI Project Executive Summaries",
+        "Natural Language 'Ask TerraWatch AI'",
+        "Multi-Site Comparative Analytics",
+        "Priority API & PostGIS Spatial Exports",
+        "Audit Logging & Role-Based Access"
+      ],
+      "limits": {
+        "max_projects": -1,
+        "max_sites": -1,
+        "ai_insights": true,
+        "pdf_reports": true
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Western Ghats High-Canopy Ecological Corridor",
+      "description": "Restoration of fragmented rainforest corridors in Maharashtra's Northern Western Ghats, enhancing endemic biodiversity and continuous canopy carbon storage.",
+      "project_type": "CONSERVATION",
+      "status": "ACTIVE",
+      "total_area_hectares": 1420.5,
+      "region": "Maharashtra",
+      "sites": [
+        {
+          "id": 1,
+          "name": "Bhimashankar Wildlife Corridor Sector A",
+          "description": "Critical ridge corridor connecting evergreen patches with Indian Giant Squirrel habitat.",
+          "status": "ACTIVE",
+          "latitude": 19.0725,
+          "longitude": 73.5350,
+          "area_hectares": 480.2,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [73.5200, 19.0600],
+              [73.5500, 19.0600],
+              [73.5550, 19.0850],
+              [73.5250, 19.0850],
+              [73.5200, 19.0600]
+            ]]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mahabaleshwar Cloud Catchment Zone",
+          "description": "High-elevation montane shola-grassland mosaic catchment providing perennial stream flows.",
+          "status": "ACTIVE",
+          "latitude": 17.9250,
+          "longitude": 73.6550,
+          "area_hectares": 510.8,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [73.6400, 17.9100],
+              [73.6700, 17.9120],
+              [73.6720, 17.9400],
+              [73.6420, 17.9380],
+              [73.6400, 17.9100]
+            ]]
+          }
+        },
+        {
+          "id": 3,
+          "name": "Koyna Riparian Buffer Alpha",
+          "description": "Degraded hillside slope undergoing assisted natural regeneration to protect reservoir runoff.",
+          "status": "MONITORING",
+          "latitude": 17.4000,
+          "longitude": 73.7500,
+          "area_hectares": 429.5,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [73.7350, 17.3850],
+              [73.7650, 17.3870],
+              [73.7680, 17.4150],
+              [73.7380, 17.4120],
+              [73.7350, 17.3850]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cauvery Basin Agroforestry & Soil Carbon Initiative",
+      "description": "Multi-strata shade agroforestry across coffee and spice plantations in Kodagu and Hassan, sequestering deep soil carbon and promoting native pollinators.",
+      "project_type": "AGROFORESTRY",
+      "status": "ACTIVE",
+      "total_area_hectares": 980.0,
+      "region": "Karnataka",
+      "sites": [
+        {
+          "id": 4,
+          "name": "Coorg Shade-Grown Agroforest 1",
+          "description": "Canopy layer featuring Rosewood and Silver Oak intercropped with Arabica coffee.",
+          "status": "ACTIVE",
+          "latitude": 12.3350,
+          "longitude": 75.8050,
+          "area_hectares": 340.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [75.7900, 12.3200],
+              [75.8200, 12.3220],
+              [75.8220, 12.3500],
+              [75.7920, 12.3480],
+              [75.7900, 12.3200]
+            ]]
+          }
+        },
+        {
+          "id": 5,
+          "name": "Hunsur Native Tree Boundary Sector",
+          "description": "Windbreak and biodiversity corridors framing smallholder farm plots.",
+          "status": "MONITORING",
+          "latitude": 12.3100,
+          "longitude": 76.2900,
+          "area_hectares": 310.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [76.2750, 12.2950],
+              [76.3050, 12.2970],
+              [76.3080, 12.3250],
+              [76.2780, 12.3220],
+              [76.2750, 12.2950]
+            ]]
+          }
+        },
+        {
+          "id": 6,
+          "name": "Kabini Buffer Plantation Sector C",
+          "description": "Riparian buffer along river tributaries preventing agricultural nutrient leaching.",
+          "status": "ACTIVE",
+          "latitude": 12.0100,
+          "longitude": 76.1500,
+          "area_hectares": 330.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [76.1350, 11.9950],
+              [76.1650, 11.9980],
+              [76.1680, 12.0250],
+              [76.1380, 12.0220],
+              [76.1350, 11.9950]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Thar Desert Silvopasture & Sand Stabilization",
+      "description": "Drought-resilient Khejri (Prosopis cineraria) and native pasture restoration to curb desertification, boost soil organic matter, and sustain pastoral livelihoods.",
+      "project_type": "RESTORATION",
+      "status": "MONITORING",
+      "total_area_hectares": 1850.0,
+      "region": "Rajasthan",
+      "sites": [
+        {
+          "id": 7,
+          "name": "Khejri Agro-Silvopastoral Zone 1",
+          "description": "Deep-rooting legume trees paired with rotational livestock grazing paddocks.",
+          "status": "ACTIVE",
+          "latitude": 26.9200,
+          "longitude": 71.2100,
+          "area_hectares": 620.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [71.1900, 26.9050],
+              [71.2300, 26.9080],
+              [71.2320, 26.9350],
+              [71.1920, 26.9320],
+              [71.1900, 26.9050]
+            ]]
+          }
+        },
+        {
+          "id": 8,
+          "name": "Jaisalmer Dune Stabilization Grid",
+          "description": "Micro-catchment earthen berms preventing highway sand encroachment.",
+          "status": "AT_RISK",
+          "latitude": 27.0500,
+          "longitude": 71.4200,
+          "area_hectares": 580.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [71.4000, 27.0350],
+              [71.4400, 27.0380],
+              [71.4420, 27.0650],
+              [71.4020, 27.0620],
+              [71.4000, 27.0350]
+            ]]
+          }
+        },
+        {
+          "id": 9,
+          "name": "Oran Sacred Grove Community Sanctuary",
+          "description": "Traditional community protected woodland harbouring endangered Great Indian Bustard.",
+          "status": "ACTIVE",
+          "latitude": 26.7500,
+          "longitude": 71.6500,
+          "area_hectares": 650.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [71.6300, 26.7350],
+              [71.6700, 26.7380],
+              [71.6720, 26.7650],
+              [71.6320, 26.7620],
+              [71.6300, 26.7350]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Satpura-Maikal Central Wildlife Corridor",
+      "description": "Assisted natural regeneration and enrichment planting with native sal and teak in Madhya Pradesh, establishing secure transit routes for apex carnivores.",
+      "project_type": "BIODIVERSITY",
+      "status": "ACTIVE",
+      "total_area_hectares": 2100.0,
+      "region": "Madhya Pradesh",
+      "sites": [
+        {
+          "id": 10,
+          "name": "Pachmarhi Biosphere Buffer Zone",
+          "description": "High-canopy mixed deciduous forest acting as buffer to the national park core.",
+          "status": "ACTIVE",
+          "latitude": 22.4650,
+          "longitude": 78.4350,
+          "area_hectares": 720.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [78.4150, 22.4500],
+              [78.4550, 22.4520],
+              [78.4580, 22.4800],
+              [78.4180, 22.4780],
+              [78.4150, 22.4500]
+            ]]
+          }
+        },
+        {
+          "id": 11,
+          "name": "Tawa River Catchment Reforestation",
+          "description": "Slope stabilization and multi-species bamboo clumps protecting reservoir catchment.",
+          "status": "ACTIVE",
+          "latitude": 22.5800,
+          "longitude": 78.0200,
+          "area_hectares": 680.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [78.0000, 22.5650],
+              [78.0400, 22.5680],
+              [78.0420, 22.5950],
+              [78.0020, 22.5920],
+              [78.0000, 22.5650]
+            ]]
+          }
+        },
+        {
+          "id": 12,
+          "name": "Chhindwara Mixed Deciduous Core",
+          "description": "Dense sal forest monitoring station for long-term woody biomass accumulation.",
+          "status": "ACTIVE",
+          "latitude": 22.1200,
+          "longitude": 78.8500,
+          "area_hectares": 700.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [78.8300, 22.1050],
+              [78.8700, 22.1080],
+              [78.8720, 22.1350],
+              [78.8320, 22.1320],
+              [78.8300, 22.1050]
+            ]]
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sundarbans Delta Blue Carbon Restoration",
+      "description": "Tidal mangrove afforestation in the Bengal Delta with Rhizophora and Avicennia species, buffering storm surges and locking carbon in saturated estuarine sediments.",
+      "project_type": "CARBON",
+      "status": "ACTIVE",
+      "total_area_hectares": 1250.0,
+      "region": "West Bengal",
+      "sites": [
+        {
+          "id": 13,
+          "name": "Sundarban Estuarine Mangrove Zone 1",
+          "description": "Pristine tidal channel fringe with maximum sediment carbon accretion.",
+          "status": "ACTIVE",
+          "latitude": 21.9500,
+          "longitude": 88.7500,
+          "area_hectares": 450.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [88.7300, 21.9350],
+              [88.7700, 21.9380],
+              [88.7720, 21.9650],
+              [88.7320, 21.9620],
+              [88.7300, 21.9350]
+            ]]
+          }
+        },
+        {
+          "id": 14,
+          "name": "Gosaba Tidal Mudflat Plantation",
+          "description": "Community-led coastal embankment stabilization plantation.",
+          "status": "MONITORING",
+          "latitude": 22.1600,
+          "longitude": 88.8100,
+          "area_hectares": 390.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [88.7900, 22.1450],
+              [88.8300, 22.1480],
+              [88.8320, 22.1750],
+              [88.7920, 22.1720],
+              [88.7900, 22.1450]
+            ]]
+          }
+        },
+        {
+          "id": 15,
+          "name": "Matla Saline Wetland Restoration Zone",
+          "description": "Abandoned aquaculture ponds reclaimed into thriving halophytic wetland habitat.",
+          "status": "ACTIVE",
+          "latitude": 22.2800,
+          "longitude": 88.6700,
+          "area_hectares": 410.0,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [88.6500, 22.2650],
+              [88.6900, 22.2680],
+              [88.6920, 22.2950],
+              [88.6520, 22.2920],
+              [88.6500, 22.2650]
+            ]]
+          }
+        }
+      ]
+    }
+  ],
+  "knowledge_sources": [
+    {
+      "id": 1,
+      "title": "IPCC Guidelines for National Greenhouse Gas Inventories: Agriculture, Forestry and Other Land Use",
+      "organization": "Intergovernmental Panel on Climate Change (IPCC)",
+      "url": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html",
+      "document_type": "Scientific Methodology",
+      "publication_date": "2019-05-12",
+      "content": "Defines Tier 1 and Tier 2 carbon stock estimation factors for tropical moist deciduous, semi-arid woodland, and coastal mangrove soils."
+    },
+    {
+      "id": 2,
+      "title": "Forest Survey of India: India State of Forest Report (ISFR 2023)",
+      "organization": "Ministry of Environment, Forest and Climate Change (MoEFCC)",
+      "url": "https://fsi.nic.in",
+      "document_type": "Government Report",
+      "publication_date": "2023-12-01",
+      "content": "Comprehensive baseline for forest canopy density, tree cover outside forests, and state-wise biomass carbon pools across Indian biogeographic zones."
+    },
+    {
+      "id": 3,
+      "title": "High-Resolution Satellite Remote Sensing for Vegetation Health & NDVI Dynamics",
+      "organization": "ISRO / National Remote Sensing Centre (NRSC)",
+      "url": "https://www.nrsc.gov.in",
+      "document_type": "Technical Guide",
+      "publication_date": "2022-08-15",
+      "content": "Methodology for sensor calibration, cloud masking, and normalized difference vegetation index (NDVI) anomaly monitoring in tropical climates."
+    }
+  ]
+}
